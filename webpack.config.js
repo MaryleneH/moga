@@ -25,6 +25,7 @@ module.exports = [
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
       filename: 'style-bundle-login.js',
+      path:'/',
     },
     module: {
       rules: [{
@@ -38,6 +39,7 @@ module.exports = [
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
       filename: 'style-bundle-home.js',
+      path:'/',
     },
     module: {
       rules: [{
@@ -49,7 +51,8 @@ module.exports = [
   {
     entry: "./login.js",
     output: {
-      filename: "bundle-login.js"
+      filename: "bundle-login.js",
+      path:'/',
     },
     module: {
       loaders: [{
@@ -62,7 +65,8 @@ module.exports = [
   {
     entry: "./home.js",
     output: {
-      filename: "bundle-home.js"
+      filename: "bundle-home.js",
+      path:'/',
     },
     module: {
       loaders: [{
